@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hercules</title>
+	<link href="https://fonts.googleapis.com/css?family=Caesar+Dressing&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<style>
+		#herc {
+			position: absolute;
+			left: 580px;
+			height: 460px;
+			top: 150px;
+		}
+		body {
+			background-image: url(images/forest_sunset_bg.png);
+			background-size: 1366px 678px;	
+		}
+		#reposition {
+			position: absolute;
+			width: 400px;
+			left: 124px;
+			top: 52px;
+		}
+		#demo {
+			color: black;
+		}
+		#bubble {
+			height: 200px;
+			width: 450px;
+			position: absolute;
+			left: 95px;
+			top: 34px;
+			z-index: -1;
+			transform: scaleX(-1);
+		}
+		#cont {
+			position: absolute;
+			left: 260px;
+			top: 200px;
+		}
+	</style>
+	
+</head>
+	
+<body onload="typeWriter()">
+	
+	<div id="reposition">
+		<p id="demo"></p>
+	</div>
+	<img id="herc" src="images/Hercules.png">
+	<img id="bubble" src="images/bubble.png">
+	
+	<h1 id="cont" onClick="window.location.href = 'hercules5.html';">Continue</h1>
+
+	<script>
+		var i = 0;
+		var txt = 'After such a long trip, I could eat a lion at this point… Let’s see where this thing is.';
+		var speed = 65;
+		function typeWriter() {
+		  if (i < txt.length) {
+			document.getElementById("demo").innerHTML += txt.charAt(i);
+			i++;
+			setTimeout(typeWriter, speed);
+		  }
+		}
+	</script>
+</body>
+</html>

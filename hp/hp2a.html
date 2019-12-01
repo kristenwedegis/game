@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hades &amp; Persephone</title>
+	<link href="https://fonts.googleapis.com/css?family=Caesar+Dressing&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/styles.css">
+	<style>
+		#pers {
+			height: 400px;
+			position: absolute;
+			left: 550px;
+			top: 180px;
+			z-index: -1;
+		}
+		body {
+			background-image: url(../images/underworld.png);
+			background-size: cover;
+		}
+		#reposition {
+			position: absolute;
+			width: 420px;
+			right: 160px;
+			top: 8px;
+		}
+		#demo {
+			color: black;
+		}
+		#bubble {
+			height: 300px;
+			width: 500px;
+			position: absolute;
+			right: 120px;
+			top: 5px;
+			z-index: -1;
+		}
+		#cont {
+			position: absolute;
+			right: 320px;
+			top: 260px;
+		}
+	</style>
+</head>
+	
+<body onload="typeWriter()">	
+	<div id="reposition">
+		<p id="demo"></p>
+	</div>
+	<img id="pers" src="../images/Persephone_happy.png">
+	<img id="bubble" src="../images/bubble.png">
+	<h1 id="cont" onClick="window.location.href = 'hp3.html';">Continue</h1>
+	
+	<script>
+		var i = 0;
+		var txt = 'Well then, Nameless, welcome to the Underworld, or Hades if you will. Though we should hush! He hates it when I talk to fresh souls. Shall I take you somewhere lovely? It’s a truly special spot down here, for only the purest of evil souls. Which I feel like you might have.';
+		var speed = 65;
+		function typeWriter() {
+		  if (i < txt.length) {
+			document.getElementById("demo").innerHTML += txt.charAt(i);
+			i++;
+			setTimeout(typeWriter, speed);
+		  }
+		}
+	</script>
+</body>
+</html>

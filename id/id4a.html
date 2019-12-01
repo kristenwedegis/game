@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icarus &amp; Daedelus</title>
+	<link href="https://fonts.googleapis.com/css?family=Caesar+Dressing&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/styles.css">
+	<style>
+		#d {
+			position: absolute;
+			left: 280px;
+			height: 160px;
+			top: 60px;
+			transform: rotate(50deg);
+		}
+		#icarus {
+			position: absolute;
+			right: 130px;
+			height: 160px;
+			top: 70px;
+			transform: rotate(-70deg) scaleX(-1);
+		}
+		body {
+			background-image: url(../images/crete_beach.png);
+			background-size: 1366px 678px;	
+		}
+		#bubbleD {
+			height: 200px;
+			position: absolute;
+			left: 380px;
+			top: 55px;
+			transform: rotate(40deg);
+		}
+		#dText {
+			color: black;
+			width: 300px;
+			position: absolute;
+			left: 410px;
+			top: 70px;
+			transform: rotate(40deg);
+		}
+		#iText {
+			font-size: 14px;
+			color: black;
+			width: 250px;
+			position: absolute;
+			top: 40px;
+			right: 267px;
+			transform: rotate(-20deg);
+		}
+		#bubbleI {
+			color: black;
+			width: 300px;
+			position: absolute;
+			right: 240px;
+			top: 30px;
+			transform: scaleX(-1) rotate(20deg);
+			z-index: -1;
+		}
+		#cont {
+			position: absolute;
+			top: 280px;
+			right: 500px;
+		}
+	</style>
+	
+</head>
+	
+<body>
+	<img id="icarus" src="../images/Icarus.png">
+	<p id="iText">How can you say that, Father, when’s the next time we’ll have a chance to fly? Do you want to fly a bit lower with me? We can feel the cool wind, and smell the sea. What do you say?</p>
+	
+	<img id="d" src="../images/Daedalus.png">
+	<img id="bubbleD" src="../images/bubble.png">
+	<img id="bubbleI" src="../images/bubble.png">
+	<p id="dText">Now remember to be careful. Focus on flying forward and nothing more, alright?</p>
+	
+	<h1 id="cont" onClick="window.location.href = 'id5.html';">Continue</h1>
+
+</body>
+</html>

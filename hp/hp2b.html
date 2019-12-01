@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hades &amp; Persephone</title>
+	<link href="https://fonts.googleapis.com/css?family=Caesar+Dressing&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/styles.css">
+	<style>
+		#pers {
+			height: 400px;
+			position: absolute;
+			left: 550px;
+			top: 180px;
+			z-index: -1;
+		}
+		body {
+			background-image: url(../images/underworld.png);
+			background-size: cover;
+		}
+		#reposition {
+			position: absolute;
+			width: 420px;
+			right: 120px;
+			top: 8px;
+		}
+		#demo {
+			color: black;
+		}
+		#bubble {
+			height: 310px;
+			width: 550px;
+			position: absolute;
+			right: 50px;
+			top: 5px;
+			z-index: -1;
+		}
+		#cont {
+			position: absolute;
+			right: 320px;
+			top: 260px;
+		}
+	</style>
+</head>
+	
+<body onload="typeWriter()">	
+	<div id="reposition">
+		<p id="demo"></p>
+	</div>
+	<img id="pers" src="../images/Persephone_happy.png">
+	<img id="bubble" src="../images/bubble.png">
+	<h1 id="cont" onClick="window.location.href = 'hp3.html';">Continue</h1>
+	
+	<script>
+		var i = 0;
+		var txt = 'Why, he was your guide of course. Charon is the ferryman who leads all the souls across Styx for a single obolus or danake. In any case, have you a moment for a journey? I know of a place down here only for the most pleasant of souls, which I have a feeling you must be one of.';
+		var speed = 65;
+		function typeWriter() {
+		  if (i < txt.length) {
+			document.getElementById("demo").innerHTML += txt.charAt(i);
+			i++;
+			setTimeout(typeWriter, speed);
+		  }
+		}
+	</script>
+</body>
+</html>

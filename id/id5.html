@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icarus &amp; Daedelus</title>
+	<link href="https://fonts.googleapis.com/css?family=Caesar+Dressing&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/styles.css">
+	<style>
+		#d {
+			position: absolute;
+			left: 280px;
+			height: 160px;
+			top: 60px;
+			transform: rotate(50deg);
+		}
+		#icarus {
+			position: absolute;
+			right: 130px;
+			height: 160px;
+			top: 70px;
+			transform: rotate(-70deg) scaleX(-1);
+		}
+		body {
+			background-image: url(../images/crete_beach.png);
+			background-size: 1366px 678px;	
+		}
+		.glow-on-hover {
+			width: 400px;
+		}
+		h1 {
+			position: absolute;
+			top: 220px;
+			
+		}
+		.col-container {
+			position: absolute;
+			top: 300px;
+			width: 99%;
+		}
+	</style>
+	
+</head>
+	
+<body>
+	<img id="icarus" src="../images/Icarus.png">
+	
+	<img id="d" src="../images/Daedalus.png">
+	
+	<h1>Daedalus just told us not to do anything dangerous, and yet he makes it sound so fun. I’ll tell him I:</h1>
+	
+	<div class="col-container">
+	  <div class="col">
+		  <button class="glow-on-hover" type="button" onClick="window.location.href = 'id6.html'">You agree to do it. “Lets go, as long as we don’t go too far it should be 
+fine.”
+</button>
+	  </div>
+
+	  <div class="col">
+		  <button class="glow-on-hover" onClick="window.location.href = 'id6.html'">You decide to heed Daedalus' warning and say no. “I’m fine up here, but go 
+ahead if you really want to.”</button>
+	  </div>
+	</div>
+
+</body>
+</html>

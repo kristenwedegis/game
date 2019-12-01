@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hercules</title>
+	<link href="https://fonts.googleapis.com/css?family=Caesar+Dressing&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/styles.css">
+	<style>
+		#pers {
+			height: 400px;
+			position: absolute;
+			left: 350px;
+			top: 190px;
+			z-index: -1;
+		}
+		body {
+			background-image: url(../images/hades_door.png);
+			background-size: 1366px 678px;	
+		}
+		#reposition {
+			position: absolute;
+			width: 200px;
+			left: 150px;
+			top: 160px;
+		}
+		#demo {
+			color: black;
+		}
+		#bubble {
+			height: 150px;
+			width: 255px;
+			position: absolute;
+			left: 120px;
+			top: 150px;
+			z-index: -1;
+			transform: scaleX(-1);
+		}
+		.glow-on-hover {
+			width: 400px;
+		}
+		#A {
+			width: 290px;
+			position: absolute;
+			top: 320px;
+			left: 50px;
+		}
+	</style>
+	
+</head>
+	
+<body onload="typeWriter()">
+	<img id="pers" src="../images/Persephone_worried.png">
+	
+	<div id="reposition">
+		<p id="demo"></p>
+	</div>
+
+	<img id="bubble" src="../images/bubble.png">
+	
+	<button id="A" class="glow-on-hover" type="button" onClick="window.location.href = 'hpHades2.html';">You gulp and follow behind her. “Is he really that scary?”</button>
+	
+	<script>
+		var i = 0;
+		var txt = 'So be it. Follow me, poor soul.';
+		var speed = 65;
+		function typeWriter() {
+		  if (i < txt.length) {
+			document.getElementById("demo").innerHTML += txt.charAt(i);
+			i++;
+			setTimeout(typeWriter, speed);
+		  }
+		}
+	</script>
+</body>
+</html>

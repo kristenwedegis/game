@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hercules</title>
+	<link href="https://fonts.googleapis.com/css?family=Caesar+Dressing&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<style>
+		#herc {
+			position: absolute;
+			left: 320px;
+			height: 420px;
+			top: 185px;
+		}
+		body {
+			background-image: url(images/cave_inside.png);
+			background-size: 1366px 678px;	
+		}
+		#reposition {
+			position: absolute;
+			width: 400px;
+			left: 515px;
+			top: 10px;
+		}
+		#demo {
+			color: black;
+		}
+		#bubble {
+			height: 300px;
+			width: 520px;
+			position: absolute;
+			left: 460px;
+			top: 10px;
+			z-index: -1;
+		}
+		#cont {
+			position: absolute;
+			right: 500px;
+			top: 260px;
+		}
+	</style>
+	
+</head>
+	
+<body onload="typeWriter()">
+	<img id="herc" src="images/Hercules.png">
+	
+	<div id="reposition">
+		<p id="demo"></p>
+	</div>
+	<img id="herc" src="images/Hercules.png">
+	<img id="bubble" src="images/bubble.png">
+	<h1 id="cont" onClick="window.location.href = 'hercules7.html';">Continue</h1>
+	
+	<script>
+		var i = 0;
+		var txt = 'Well, someone’s got to get us back to Athens alive, and you were a great help in distracting him. After proving to King Eurystheus that the lion has been slain I’ll be given my next labor; I welcome you to join me when that time comes, brave traveler.';
+		var speed = 65;
+		function typeWriter() {
+		  if (i < txt.length) {
+			document.getElementById("demo").innerHTML += txt.charAt(i);
+			i++;
+			setTimeout(typeWriter, speed);
+		  }
+		}
+	</script>
+</body>
+</html>

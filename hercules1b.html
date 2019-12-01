@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hercules</title>
+	<link href="https://fonts.googleapis.com/css?family=Caesar+Dressing&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<style>
+		#herc {
+			position: absolute;
+			left: 580px;
+			height: 460px;
+			top: 150px;
+		}
+		body {
+			background-image: url(images/shore_with_boat.png);
+			background-size: 1366px 678px;	
+		}
+		#reposition {
+			position: absolute;
+			width: 400px;
+			right: 110px;
+			top: 40px;
+		}
+		#demo {
+			color: black;
+		}
+		#bubble {
+			height: 250px;
+			width: 450px;
+			position: absolute;
+			right: 80px;
+			top: 20px;
+			z-index: -1;
+		}
+		#cont {
+			position: absolute;
+			right: 250px;
+			top: 220px;
+		}
+	</style>
+	
+</head>
+	
+<body onload="typeWriter()">
+	<img id="herc" src="images/Hercules.png">
+	
+	<div id="reposition">
+		<p id="demo"></p>
+	</div>
+	<img id="herc" src="images/Hercules.png">
+	<img id="bubble" src="images/bubble.png">
+	<h1 id="cont" onClick="window.location.href = 'hercules1b2.html';">Continue</h1>
+	
+	<script>
+		var i = 0;
+		var txt = 'Hey, kid! Yes, you! The name is Hercules, and you look awful strong. Care to come on a journey with me? I’m going to need a strong crew for where I’m going.';
+		var speed = 65;
+		function typeWriter() {
+		  if (i < txt.length) {
+			document.getElementById("demo").innerHTML += txt.charAt(i);
+			i++;
+			setTimeout(typeWriter, speed);
+		  }
+		}
+	</script>
+</html>

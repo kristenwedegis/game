@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hades &amp; Persephone</title>
+	<link href="https://fonts.googleapis.com/css?family=Caesar+Dressing&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/styles.css">
+	<style>
+		#hades {
+			height: 400px;
+			position: absolute;
+			right: 190px;
+			top: 170px;
+			z-index: -1;
+		}
+		body {
+			background-image: url(../images/hades_room.png);
+			background-size: cover;
+		}
+		.glow-on-hover {
+			width: 550px;
+		}
+	</style>
+</head>
+	
+<body>	
+	<img id="hades" src="../images/Hades.png">
+	<h1>He looks angry enough to kill. I need to do something I:</h1>
+	
+	<div class="col-container">
+	  <div class="col">
+		  <button class="glow-on-hover" type="button" onClick="window.location.href = 'hadesend.html'">You turn to leave. “My apologies!”</button>
+	  </div>
+
+	  <div class="col">
+		  <button class="glow-on-hover" onClick="window.location.href = 'hadesend.html'">You say there and say nothing. “. . .”</button>
+	  </div>
+	</div>
+</body>
+</html>

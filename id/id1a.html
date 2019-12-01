@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icarus &amp; Daedelus</title>
+	<link href="https://fonts.googleapis.com/css?family=Caesar+Dressing&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/styles.css">
+	<style>
+		#icarus {
+			position: absolute;
+			left: 370px;
+			height: 460px;
+			top: 150px;
+		}
+		body {
+				background-image: url(../images/crete_beach.png);
+				background-size: 1366px 678px;	
+			}
+		#reposition {
+			position: absolute;
+			width: 650px;
+			right: 90px;
+			top: 10px;
+		}
+		#demo {
+			color: black;
+		}
+		#bubble {
+			height: 245px;
+			width: 800px;
+			position: absolute;
+			left: 480px;
+			top: 10px;
+			z-index: -1;
+		}
+		#cont {
+			position: absolute;
+			right: 350px;
+			top: 210px;
+		}
+	</style>
+	
+</head>
+	
+<body onload="typeWriter()">
+	<img id="icarus" src="../images/Icarus.png">
+	
+	<div id="reposition">
+		<p id="demo"></p>
+	</div>
+
+	<img id="bubble" src="../images/bubble.png">
+	<h1 id="cont" onClick="window.location.href = 'id1a2.html';">Continue</h1>
+	
+	<script>
+		var i = 0;
+		var txt = 'I’m Icarus! Son of the famous artist and architect Daedelus, I’m sure you’ve heard of him. In any case, we really must get going before King Minos sees; my Father is waiting for me just up the shore. He’s been working day and night. I’d hate to make him worry. Here, let me help you up, you’re more than welcome to come.';
+		var speed = 65;
+		function typeWriter() {
+		  if (i < txt.length) {
+			document.getElementById("demo").innerHTML += txt.charAt(i);
+			i++;
+			setTimeout(typeWriter, speed);
+		  }
+		}
+	</script>
+</body>
+</html>

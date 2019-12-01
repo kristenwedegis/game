@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hercules</title>
+	<link href="https://fonts.googleapis.com/css?family=Caesar+Dressing&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<style>
+		#herc {
+			position: absolute;
+			left: 240px;
+			height: 130px;
+			top: 270px;
+		}
+		.glow-on-hover {
+			width: 400px;
+		}
+		body {
+			background-image: url(images/shore_with_boat.png);
+			background-size: cover;
+		}
+		#bubble {
+			position: absolute;
+			height: 20px;
+			top: 270px;
+			left: 210px;
+			transform: scaleX(-1);
+		}
+	</style>
+</head>
+	
+<body>
+	<h1 id="h1">Someone is saying something, but I just can’t hear.. Do I:</h1>	
+	<div class="col-container">
+	  <div class="col">
+		  <button id="A" class="glow-on-hover" type="button" onClick="window.location.href = 'hercules1a.html';">Move closer to hear what they're saying</button>
+	  </div>
+
+	  <div class="col">
+		  <button id="B" class="glow-on-hover" type="button" onClick="window.location.href = 'hercules1b.html';">Look around to see if they're talking to me</button>
+	  </div>
+	</div>
+	
+	<img id="herc" src="images/Hercules.png">
+	<img id="bubble" src="images/bubble.png">
+	
+</body>
+</html>

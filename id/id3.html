@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icarus &amp; Daedelus</title>
+	<link href="https://fonts.googleapis.com/css?family=Caesar+Dressing&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/styles.css">
+	<style>
+		#icarus {
+			position: absolute;
+			left: 0px;
+			height: 460px;
+			top: 150px;
+		}
+		#d {
+			position: absolute;
+			right: 50px;
+			height: 460px;
+			top: 120px;
+		}
+		body {
+			background-image: url(../images/daedalus_workshop.png);
+			background-size: 1366px 678px;	
+			}
+		#repositionI {
+			position: absolute;
+			width: 400px;
+			left: 155px;
+			top: 30px;
+			color: black;
+		}
+		#repositionD {
+			position: absolute;
+			width: 400px;
+			right: 225px;
+			top: 14px;
+			color: black;
+		}
+		#bubbleD {
+			height: 280px;
+			width: 465px;
+			position: absolute;
+			right: 200px;
+			top: 5px;
+			z-index: -1;
+			transform: scaleX(-1);
+		}
+		#bubbleI {
+			height: 280px;
+			width: 465px;
+			position: absolute;
+			left: 130px;
+			top: 10px;
+			z-index: -1;
+		}
+		#cont {
+			position: absolute;
+			left: 550px;
+			top: 200px;
+		}
+	</style>
+	
+</head>
+	
+<body>
+	<img id="icarus" src="../images/Icarus.png">
+	<img id="d" src="../images/Daedalus.png">
+	
+	<div id="repositionI">
+		<p>Father! While out looking for feathers, I found a lost traveller. They were unmoving and almost drowned half to death when I found them. Have we any way to bring them with us?</p>
+	</div>
+
+	<img id="bubbleI" src="../images/bubble.png">
+	
+	<p id="repositionD">Oh, Icarus, you’ve always been such a curious boy… I suppose we can’t say no, considering the situation, and I happen to have an extra pair of wings just in case. Will you fly with us? If so, we leave immediately.</p>
+	
+	<img id="bubbleD" src="../images/bubble.png">
+	
+	<h1 id="cont" onClick="window.location.href = 'id4.html';">Continue</h1>
+	
+</body>
+</html>

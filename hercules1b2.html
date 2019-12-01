@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hercules</title>
+	<link href="https://fonts.googleapis.com/css?family=Caesar+Dressing&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<style>
+		#herc {
+			position: absolute;
+			left: 580px;
+			height: 460px;
+			top: 150px;
+		}
+		body {
+			background-image: url(images/shore_with_boat.png);
+			background-size: 1366px 678px;	
+		}
+		.glow-on-hover {
+			width: 400px;
+		}
+	</style>
+	
+</head>
+	
+<body>
+	<img id="herc" src="images/Hercules.png">
+	
+	<h1 id="h1">Hercules?! This guy is the Hercules. Should I:</h1>	
+	<div class="col-container">
+	  <div class="col">
+		  <button id="A" class="glow-on-hover" type="button" onClick="window.location.href = 'hercules2a.html';">Agree immediately. “I love a journey, lets go!”</button>
+	  </div>
+
+	  <div class="col">
+		  <button id="B" class="glow-on-hover" type="button" onClick="window.location.href = 'hercules1b2b.html';">Ask where he’s going first.</button>
+	  </div>
+	</div>
+</body>
+</html>
